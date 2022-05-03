@@ -1,0 +1,70 @@
+.message-head-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  height: 50px;
+  box-shadow: #0000002e 1px 1px 5px;
+}
+.message-head-sender {
+  display: flex;
+  justify-content: flex-end;
+  flex: 3;
+}
+
+.message-head-sender-name {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #000;
+  text-transform: capitalize;
+  text-shadow: rgb(235, 96, 96) 0 0 10px;
+}
+.message-head-carrier {
+  display: flex;
+  flex: 6;
+  align-items: center;
+}
+.message-head-carrier > span {
+  animation: transfer 3s linear infinite;
+  position: relative;
+  font-size: 1rem;
+}
+
+.message-head-receiver {
+  flex: 3;
+}
+.message-head-receiver-name {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #000;
+  text-transform: capitalize;
+  text-shadow: rgb(84, 181, 219) 0 0 10px;
+}
+
+.message-head-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  margin: 2px 15px;
+}
+
+/* Key frames*/
+
+@keyframes transfer {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    font-size: 2rem;
+    top: 0;
+  }
+  100% {
+    left: 90%;
+    opacity: 0;
+  }
+}
